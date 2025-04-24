@@ -1,4 +1,4 @@
-// nuxt.config.ts
+// // nuxt.config.ts
 export default defineNuxtConfig({
   compatibilityDate: '2024-11-01',
   modules: ['@nuxtjs/tailwindcss', '@vesp/nuxt-fontawesome', '@vite-pwa/nuxt'],
@@ -118,3 +118,14 @@ export default defineNuxtConfig({
     },
   },
 });
+
+
+// nuxt.config.ts
+// export default defineNuxtConfig({
+//   compatibilityDate: '2024-11-01',
+//   modules: [
+//     '@nuxtjs/tailwindcss',
+//     '@vesp/nuxt-fontawesome',
+//     '@vite-pwa/nuxt',
+//   ]
+// });

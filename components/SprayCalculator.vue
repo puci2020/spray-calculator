@@ -12,7 +12,7 @@
           <label class="block text-sm font-medium text-gray-700 mb-1">Dawka środka [l/ha]</label>
           <div class="relative">
             <span class="absolute inset-y-0 left-0 flex items-center pl-3">
-              <font-awesome-icon :icon="['fas', 'droplet']" class="text-gray-400" />
+              <font-awesome :icon="['fas', 'droplet']" class="text-gray-400" />
             </span>
             <input
               v-model.number="dosePerHa"
@@ -30,7 +30,7 @@
           <label class="block text-sm font-medium text-gray-700 mb-1">Powierzchnia [ha]</label>
           <div class="relative">
             <span class="absolute inset-y-0 left-0 flex items-center pl-3">
-              <font-awesome-icon :icon="['fas', 'ruler']" class="text-gray-400" />
+              <font-awesome :icon="['fas', 'ruler']" class="text-gray-400" />
             </span>
             <input
               v-model.number="areaHa"
@@ -48,7 +48,7 @@
           <label class="block text-sm font-medium text-gray-700 mb-1">Zalecana ilość wody [l/ha]</label>
           <div class="relative">
             <span class="absolute inset-y-0 left-0 flex items-center pl-3">
-              <font-awesome-icon :icon="['fas', 'water']" class="text-gray-400" />
+              <font-awesome :icon="['fas', 'water']" class="text-gray-400" />
             </span>
             <input
               v-model.number="waterPerHa"
@@ -66,7 +66,7 @@
           <label class="block text-sm font-medium text-gray-700 mb-1">Pojemność opryskiwacza [l] (opcjonalne)</label>
           <div class="relative">
             <span class="absolute inset-y-0 left-0 flex items-center pl-3">
-              <font-awesome-icon :icon="['fas', 'spray-can']" class="text-gray-400" />
+              <font-awesome :icon="['fas', 'spray-can']" class="text-gray-400" />
             </span>
             <input
               v-model.number="sprayerCapacity"
@@ -91,11 +91,11 @@
       <!-- Wynik -->
       <div v-if="result" class="bg-green-50 p-4 rounded-lg border border-green-200 space-y-2 animate-fade-in">
         <p class="flex items-center text-gray-800">
-          <font-awesome-icon :icon="['fas', 'vial']" class="text-green-600 mr-2" />
+          <font-awesome :icon="['fas', 'vial']" class="text-green-600 mr-2" />
           <span><strong>Całkowita ilość środka:</strong> {{ result.totalProduct.toFixed(2) }} l</span>
         </p>
         <p class="flex items-center text-gray-800">
-          <font-awesome-icon :icon="['fas', 'water']" class="text-green-600 mr-2" />
+          <font-awesome :icon="['fas', 'water']" class="text-green-600 mr-2" />
           <span><strong>Całkowita ilość wody:</strong> {{ result.totalWater.toFixed(2) }} l</span>
         </p>
         <!-- Szczegóły napełnień, jeśli podano pojemność opryskiwacza -->
@@ -103,11 +103,11 @@
           <p class="text-gray-800 font-semibold">Szczegóły napełnień:</p>
           <div v-for="(fill, index) in result.fills" :key="index" class="pl-4">
             <p class="flex items-center text-gray-800">
-              <font-awesome-icon :icon="['fas', 'spray-can']" class="text-green-600 mr-2" />
+              <font-awesome :icon="['fas', 'spray-can']" class="text-green-600 mr-2" />
               <span><strong>Napełnienie {{ index + 1 }}:</strong> {{ fill.water.toFixed(2) }} l wody</span>
             </p>
             <p class="flex items-center text-gray-800 pl-6">
-              <font-awesome-icon :icon="['fas', 'vial']" class="text-green-600 mr-2" />
+              <font-awesome :icon="['fas', 'vial']" class="text-green-600 mr-2" />
               <span><strong>Środek:</strong> {{ fill.product.toFixed(2) }} l</span>
             </p>
           </div>
@@ -119,13 +119,13 @@
 
 <script setup lang="ts">
 import { ref, watch } from 'vue'
-import { FontAwesomeIcon } from '@fortawesome/vue-fontawesome'
-import { library } from '@fortawesome/fontawesome-svg-core'
-import { faDroplet, faRuler, faWater, faVial, faSprayCan } from '@fortawesome/free-solid-svg-icons'
+//import { FontAwesomeIcon } from '@fortawesome/vue-fontawesome'
+//import { library } from '@fortawesome/fontawesome-svg-core'
+//import { faDroplet, faRuler, faWater, faVial, faSprayCan } from '@fortawesome/free-solid-svg-icons'
 
 
 // Dodaj ikony do biblioteki FontAwesome
-library.add(faDroplet, faRuler, faWater, faVial, faSprayCan)
+//ibrary.add(faDroplet, faRuler, faWater, faVial, faSprayCan)
 
 const dosePerHa = ref<number>(0)
 const areaHa = ref<number>(0)

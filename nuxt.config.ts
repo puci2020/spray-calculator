@@ -4,7 +4,13 @@ import tailwindcss from "@tailwindcss/vite";
 export default defineNuxtConfig({
   compatibilityDate: '2024-11-01',
   devtools: { enabled: true },
-  modules: ["@vite-pwa/nuxt", "@vesp/nuxt-fontawesome"],
+  modules: ["@vite-pwa/nuxt", "@vesp/nuxt-fontawesome",
+    ['@nuxtjs/google-adsense', {
+      id: 'ca-pub-1741709382102643',
+      onPageLoad: true,
+      test: false
+    }]
+  ],
   vite: {
     plugins: [
       tailwindcss(),

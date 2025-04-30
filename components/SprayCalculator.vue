@@ -4,6 +4,8 @@
     <div class="w-full max-w-md bg-white bg-opacity-90 rounded-2xl shadow-lg p-6 space-y-6">
       <!-- Nagłówek -->
       <h1 class="text-2xl font-bold text-center text-green-700">Kalkulator oprysku</h1>
+      <Adsbygoogle ad-slot="6888503638" />
+
 
       <!-- Formularz -->
       <div class="space-y-4">
@@ -122,6 +124,7 @@ import { ref, watch } from 'vue'
 //import { FontAwesomeIcon } from '@fortawesome/vue-fontawesome'
 //import { library } from '@fortawesome/fontawesome-svg-core'
 //import { faDroplet, faRuler, faWater, faVial, faSprayCan } from '@fortawesome/free-solid-svg-icons'
+
 
 
 // Dodaj ikony do biblioteki FontAwesome

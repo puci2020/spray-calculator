@@ -2,14 +2,9 @@
   <div
     class="min-h-screen flex items-center justify-center p-4 background-field">
     <div class="w-full max-w-md bg-white bg-opacity-90 rounded-2xl shadow-lg p-6 space-y-6">
-      <!-- Nagłówek -->
       <h1 class="text-2xl font-bold text-center text-green-700">Kalkulator oprysku</h1>
-      <Adsbygoogle ad-slot="6888503638" />
 
-
-      <!-- Formularz -->
       <div class="space-y-4">
-        <!-- Pole: Dawka środka -->
         <div>
           <label class="block text-sm font-medium text-gray-700 mb-1">Dawka środka [l/ha]</label>
           <div class="relative">
@@ -27,7 +22,6 @@
           </div>
         </div>
 
-        <!-- Pole: Powierzchnia -->
         <div>
           <label class="block text-sm font-medium text-gray-700 mb-1">Powierzchnia [ha]</label>
           <div class="relative">
@@ -45,7 +39,6 @@
           </div>
         </div>
 
-        <!-- Pole: Ilość wody -->
         <div>
           <label class="block text-sm font-medium text-gray-700 mb-1">Zalecana ilość wody [l/ha]</label>
           <div class="relative">
@@ -63,7 +56,6 @@
           </div>
         </div>
 
-        <!-- Pole: Pojemność opryskiwacza (opcjonalne) -->
         <div>
           <label class="block text-sm font-medium text-gray-700 mb-1">Pojemność opryskiwacza [l] (opcjonalne)</label>
           <div class="relative">
@@ -81,7 +73,7 @@
           </div>
         </div>
 
-        <!-- Przycisk Oblicz -->
+
         <button
           @click="calculate"
           class="w-full bg-gradient-to-r from-green-600 to-green-700 text-white py-3 rounded-lg font-semibold hover:from-green-700 hover:to-green-800 transition duration-200 ease-in-out transform hover:scale-105"
@@ -90,7 +82,6 @@
         </button>
       </div>
 
-      <!-- Wynik -->
       <div v-if="result" class="bg-green-50 p-4 rounded-lg border border-green-200 space-y-2 animate-fade-in">
         <p class="flex items-center text-gray-800">
           <font-awesome :icon="['fas', 'vial']" class="text-green-600 mr-2" />
@@ -120,11 +111,11 @@
 </template>
 
 <script setup lang="ts">
-import { ref, watch } from 'vue'
 //import { FontAwesomeIcon } from '@fortawesome/vue-fontawesome'
 //import { library } from '@fortawesome/fontawesome-svg-core'
 //import { faDroplet, faRuler, faWater, faVial, faSprayCan } from '@fortawesome/free-solid-svg-icons'
 
+import { ref, watch } from 'vue'
 
 
 // Dodaj ikony do biblioteki FontAwesome

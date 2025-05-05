@@ -1,8 +1,20 @@
 <template>
-  <div
-    class="min-h-screen flex items-center justify-center p-4 background-field">
-    <div class="w-full max-w-md bg-white bg-opacity-90 rounded-2xl shadow-lg p-6 space-y-6">
+   <div class="relative h-screen w-full flex items-center justify-center px-2">
+    <NuxtImg
+      src="/images/background-image.webp"
+      alt="Tło pola"
+      class="absolute inset-0 w-full h-full object-cover z-[-1]"
+      width="1920"
+      height="1080"
+      sizes="(max-width: 640px) 640px, (max-width: 1024px) 1024px, 1920px"
+      format="webp"
+      quality="70"
+      loading="lazy"
+    />
+    <div class="relative z-10">
+      <div class="w-full max-w-md bg-white bg-opacity-90 rounded-2xl shadow-lg p-6 space-y-6">
       <h1 class="text-2xl font-bold text-center text-green-700">Kalkulator oprysku</h1>
+      <h2 class="font-bold text-center text-green-700">Oblicz ilość środka na hektar oraz liczbę napełnień opryskiwacza!</h2>
 
       <div class="space-y-4">
         <div>
@@ -106,8 +118,9 @@
           </div>
         </div>
       </div>
-    </div>
+    </div>    </div>
   </div>
+ 
 </template>
 
 <script setup lang="ts">
@@ -188,11 +201,5 @@ function calculate() {
 @keyframes fadeIn {
   0% { opacity: 0; transform: translateY(10px); }
   100% { opacity: 1; transform: translateY(0); }
-}
-
-.background-field {
-  background-image: url('/images/background-image.jpg');
-  background-size: cover;
-  background-position: center;
 }
 </style>

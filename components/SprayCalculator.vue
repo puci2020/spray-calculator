@@ -1,18 +1,5 @@
 <template>
-   <div class="relative h-screen w-full flex items-center justify-center px-2">
-    <NuxtImg
-      src="/images/background-image.webp"
-      alt="Tło pola"
-      class="absolute inset-0 w-full h-full object-cover z-[-1]"
-      width="1920"
-      height="1080"
-      sizes="(max-width: 640px) 640px, (max-width: 1024px) 1024px, 1920px"
-      format="webp"
-      quality="70"
-      loading="lazy"
-    />
-    <div class="relative z-10">
-      <div class="w-full max-w-md bg-white bg-opacity-90 rounded-2xl shadow-lg p-6 space-y-6">
+      <div class="w-full lg:w-1/4 max-w-md bg-white bg-opacity-90 rounded-2xl shadow-lg p-6 space-y-6">
       <h1 class="text-2xl font-bold text-center text-green-700">Kalkulator oprysku</h1>
       <h2 class="font-bold text-center text-green-700">Oblicz ilość środka na hektar oraz liczbę napełnień opryskiwacza!</h2>
 
@@ -118,21 +105,13 @@
           </div>
         </div>
       </div>
-    </div>    </div>
-  </div>
- 
+
+    </div>    
 </template>
 
 <script setup lang="ts">
-//import { FontAwesomeIcon } from '@fortawesome/vue-fontawesome'
-//import { library } from '@fortawesome/fontawesome-svg-core'
-//import { faDroplet, faRuler, faWater, faVial, faSprayCan } from '@fortawesome/free-solid-svg-icons'
-
 import { ref, watch } from 'vue'
 
-
-// Dodaj ikony do biblioteki FontAwesome
-//ibrary.add(faDroplet, faRuler, faWater, faVial, faSprayCan)
 
 const dosePerHa = ref<number>(0)
 const areaHa = ref<number>(0)

@@ -2,6 +2,7 @@
       <div class="w-full lg:w-1/4 max-w-md bg-white bg-opacity-90 rounded-2xl shadow-lg p-6 space-y-6">
       <h1 class="text-2xl font-bold text-center text-green-700">Kalkulator oprysku</h1>
       <h2 class="font-bold text-center text-green-700">Oblicz ilość środka na hektar oraz liczbę napełnień opryskiwacza!</h2>
+      <p class="text-gray-700 text-center mb-4">Nasz kalkulator pomaga w szybkim i dokładnym planowaniu oprysków.</p>
 
       <div class="space-y-4">
         <div>

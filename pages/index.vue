@@ -12,6 +12,7 @@
     <SprayCalculator/>
     <ContentInfo/>
 
+    <!-- <ROICalculator/> -->
 <!-- </div> -->
 
 </template>

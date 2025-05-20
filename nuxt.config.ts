@@ -7,6 +7,7 @@ export default defineNuxtConfig({
       title: 'Kalkulator oprysku dla rolników - Oblicz dawkę i wodę na hektar',
       htmlAttrs: { lang: 'pl' },
       meta: [
+          { name: 'google-adsense-account', content: 'ca-pub-1741709382102643' },
         { name: 'description', content: 'Darmowy kalkulator oprysku dla rolników. Oblicz ilość środka ochrony roślin, ilość wody na hektar i liczbę napełnień opryskiwacza. Działa offline!' },
         { name: 'keywords', content: 'kalkulator oprysku, oprysk, rolnictwo, dawka na hektar, ilość wody, środek ochrony roślin, opryskiwacz, obliczanie oprysków' },
         { name: 'viewport', content: 'width=device-width, initial-scale=1' },
